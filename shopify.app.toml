@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c7542beb54b8adf12a94f5e030eb6f2c"
+name = "wish-list"
+application_url = "https://host-recall-axis-jewish.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "newostadstore.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://host-recall-axis-jewish.trycloudflare.com/auth/callback",
+  "https://host-recall-axis-jewish.trycloudflare.com/auth/shopify/callback",
+  "https://host-recall-axis-jewish.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
